@@ -1,0 +1,94 @@
+/*colors used/:
+Primary color (Pink): #fa4144;
+Secondary color (Black):#001622;
+Secondary color (Grey): #707070 */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  /* sets the font size to 16px */
+  font-weight: 300;
+  /* sets the font weight to 300 */
+  line-height: 1.6;
+  /* sets the line-height to 1.6 * the font-size */
+  color: #001622;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+a {
+  color: #001622;
+}
+
+a:visited {
+  /* visited link*/
+  color: #707070;
+}
+
+a:hover,
+a:focus {
+  color: #fa4144;
+}
+
+a:active {
+  color: #001622;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #fa4144 !important;
+  font-weight: 400;
+  padding: 10px 30px;
+  border-radius: 4px;
+  border-bottom: 2px solid #fa4144;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.button:visited {
+  color: #ffffff;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #fa4144;
+  text-transform: uppercase;
+  border: 2px solid #fa4144;
+}
+
+.button.contact:hover {
+  background-color: #fa4144;
+  color: #ffffff;
+}
+img{
+  width: 100%;
+}
