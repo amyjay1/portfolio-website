@@ -12,7 +12,6 @@ body {
   /* sets the line-height to 1.6 * the font-size */
   color: #001622;
 }
-
 h1,
 h2,
 h3,
@@ -22,6 +21,7 @@ h4 {
 
 h1 {
   font-size: 2.75em;
+  font-family: "Open Sans",sans-serif;
   font-weight: 600;
 }
 
@@ -41,12 +41,12 @@ h4 {
 }
 
 a {
-  color: #001622;
+  color: #fa4144;
 }
 
 a:visited {
   /* visited link*/
-  color: #707070;
+  color: #fa4144;
 }
 
 a:hover,
@@ -55,7 +55,7 @@ a:focus {
 }
 
 a:active {
-  color: #001622;
+  color: #fa4144;
 }
 
 .button {
@@ -71,7 +71,7 @@ a:active {
 }
 
 .button:visited {
-  color: #ffffff;
+  color: #fa4144;
 }
 
 .button:hover {
@@ -91,4 +91,14 @@ a:active {
 }
 img{
   width: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  /* sets the font size to 16px */
+  font-weight: 300;
+  /* sets the font weight to 300 */
+  line-height: 1.6;
+  /* sets the line-height to 1.6 * the font-size */
+  color: #001622;
 }
