@@ -10,8 +10,10 @@ body {
   /* sets the font weight to 300 */
   line-height: 1.6;
   /* sets the line-height to 1.6 * the font-size */
+  background-color: #ffffff;
   color: #001622;
 }
+
 h1,
 h2,
 h3,
@@ -21,7 +23,6 @@ h4 {
 
 h1 {
   font-size: 2.75em;
-  font-family: "Open Sans",sans-serif;
   font-weight: 600;
 }
 
@@ -41,21 +42,21 @@ h4 {
 }
 
 a {
-  color: #fa4144;
+  color: #001622;
 }
 
 a:visited {
   /* visited link*/
-  color: #fa4144;
+  color: #001622;
 }
 
 a:hover,
 a:focus {
-  color: #fa4144;
+  color: #ffffff;
 }
 
 a:active {
-  color: #fa4144;
+  color: #ffffff;
 }
 
 .button {
@@ -89,16 +90,15 @@ a:active {
   background-color: #fa4144;
   color: #ffffff;
 }
-img{
+
+img {
   width: 100%;
 }
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  /* sets the font size to 16px */
-  font-weight: 300;
-  /* sets the font weight to 300 */
-  line-height: 1.6;
-  /* sets the line-height to 1.6 * the font-size */
-  color: #001622;
+/* Layout styling*/
+.container {
+  padding: 0 15px;
 }
+.row {
+  margin:25px 0; /* 25 px top and bottom, 0 left and right */
+}
+#project.row{ padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;}
