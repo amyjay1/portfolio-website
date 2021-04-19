@@ -90,6 +90,7 @@ a:active {
 }
 
 .button.contact {
+  display:inline;
   background-color: transparent;
   color: #fa4144;
   text-transform: none;
