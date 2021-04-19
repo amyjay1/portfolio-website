@@ -2,6 +2,10 @@
 Primary color (Pink): #fa4144;
 Secondary color (Black):#001622;
 Secondary color (Grey): #707070 */
+*{
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -22,21 +26,25 @@ h4 {
 }
 
 h1 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.75em;
   font-weight: 600;
 }
 
 h2 {
+  font-family: "Open sans", sans-serif;
   font-size: 2.25em;
   font-weight: 600;
 }
 
 h3 {
+  font-family: "Open sans", sans-serif;
   font-size: 1.75em;
   font-weight: 400;
 }
 
 h4 {
+  font-family: "Open sans", sans-serif;
   font-size: 1.35em;
   font-weight: 400;
 }
@@ -52,11 +60,13 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #ffffff;
+  color: #fa4144;
+  text-decoration: none;
 }
 
 a:active {
-  color: #ffffff;
+  color: #fa4144;
+  background-color: #ffffff;
 }
 
 .button {
@@ -82,7 +92,7 @@ a:active {
 .button.contact {
   background-color: transparent;
   color: #fa4144;
-  text-transform: uppercase;
+  text-transform: none;
   border: 2px solid #fa4144;
 }
 
@@ -94,11 +104,82 @@ a:active {
 img {
   width: 100%;
 }
+
+header {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 10px 0;
+}
+
 /* Layout styling*/
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin:25px 0; /* 25 px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25 px top and bottom, 0 left and right */
 }
-#project.row{ padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;}
+
+#project.row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.center {
+  text-align: center;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+.logo {
+  max-width: 250px;
+}
+
+nav  {
+  display: inline-block;
+  width: 100%
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+nav > ul > li {
+display: inline-block;
+list-style-type: none;
+padding: 0;
+}
+
+nav>ul>li>a {
+  display: inline-block;
+  padding: 0 15px;
+  margin-top: 8px;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #4a4a4a;
+}
+
+.hero {
+  background-color: #F2F2F2;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%
+}
+main {
+  padding-top: 50px;
+}
+
+
+footer {
+  padding: 10px 0;
+  margin:0 auto;
+  background-color:#F2F2F2;
+  width: auto;
+}

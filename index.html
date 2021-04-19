@@ -10,7 +10,7 @@
 	<title>Amy N Jackson UX/UI Designer Madrid</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/6dc7859587.js" crossorigin="anonymous"></script>
 </head>
@@ -20,7 +20,7 @@
 		<div class="container">
 			<a href="index.html">Amy N<span>icole </span>Jackson</a>
 			<nav>
-				<ul>
+				<ul class="navigation">
 					<li><a href="index.html">Work</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="#contact">Contact</a></li>
@@ -31,26 +31,26 @@
 	<main>
 		<section class="hero">
 			<div class="container">
-				<h2> Hi, my name is Amy.
+				<h2 class="center"> Hi, my name is Amy.
 					<span> I'm a UX/UI designer based in Madrid.
 					</span>
 				</h2>
-				<p> I love finding creative solutions and working to produce beautiful designs that help people.
+				<p class="center"> I love finding creative solutions and working to produce beautiful designs that help people.
 				</p>
 			</div>
 		</section>
 		<section class="project">
 			<div class="container">
-				<h2> My Work</h2>
+				<h2 class="center"> My Work</h2>
+				<picture>
+					<source srcset="img/chefdj/cd1.jpg" media="(max-width:767px)">
+					<img src="img/chefdj/cd2.jpg" alt="Chef DJ App Mockup">
+				</picture>
+				<h3 class="center"> Chef DJ</h3>
 				<div class="row">
 					<div class="column">
-						<picture>
-							<source srcset="img/chefdj/cd1.jpg" media="(max-width:767px)">
-							<img src="img/chefdj/cd2.jpg" alt="Chef DJ App Mockup">
-						</picture>
 					</div>
 					<div class="column">
-						<h3> Chef DJ</h3>
 						<p>
 							Cooking and music go together like peas and carrots. Chef DJ gives you a place to save your favorite recipies, share them with your friends, get music sugggestions and create your favorite playlists.
 						</p>
@@ -65,7 +65,7 @@
 						</picture>
 					</div>
 					<div class="column">
-						<h3> Bearable Savings</h3>
+						<h3 class="center"> Bearable Savings</h3>
 						<p>A money saving tool that helps teenagers and college kids save for student loans, fun adventures, and helps them find online microgigs to make some extra cash.
 						</p>
 						<a href="bears.html" class="button">View project</a>
@@ -79,7 +79,7 @@
 						</picture>
 					</div>
 					<div class="column">
-						<h3> Word Up</h3>
+						<h3 class="center"> Word Up</h3>
 						<p>
 							There are many language apps out there, many having an overwhelming surplus of features, which potentially creates a distraction from the holistic learning process. This app isn't about bells and whistles: it's about
 							simplicity,usability
@@ -101,10 +101,14 @@
 				<a href="mailto:amynicolejackson@gmail.com" class="button contact"> Email me</a>
 			</div>
 			<div class="social">
-				<a href="https://www.linkedin.com/in/amy-jackson-3515161aa/" target="_blank"><i class="fab fa-linkedin"></i></a>
-				<a href="https://www.behance.net/amyjackson16" target="_blank"><i class="fab fa-behance-square"></i></a>
+				<nav>
+					<ul class="navigation">
+						<li><a href="https://www.linkedin.com/in/amy-jackson-3515161aa/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+						<li><a href="https://www.behance.net/amyjackson16" target="_blank"><i class="fab fa-behance-square"></i></a></li>
+					</ul>
+					<p class="right"> Copyright Amy Nicole Jackson 2021</p>
+				</nav>
 			</div>
-			<p>Copyright Amy Nicole Jackson 2021</p>
 		</div>
 
 	</footer>
