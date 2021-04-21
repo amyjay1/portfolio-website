@@ -2,7 +2,7 @@
 Primary color (Pink): #fa4144;
 Secondary color (Black):#001622;
 Secondary color (Grey): #707070 */
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -21,7 +21,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4
+{
   line-height: 1.4;
 }
 
@@ -48,6 +49,7 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 
 a {
   color: #001622;
@@ -90,7 +92,7 @@ a:active {
 }
 
 .button.contact {
-  display:inline;
+  display: inline;
   background-color: transparent;
   color: #fa4144;
   text-transform: none;
@@ -107,9 +109,15 @@ img {
 }
 
 header {
+  display:inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
   background-color: #F2F2F2;
   text-align: center;
   padding: 10px 0;
+  box-shadow:         4px 1px 5px 0px rgba(50, 50, 50, 0.67);
+  position:fixed;
+  width: 100%;
 }
 
 /* Layout styling*/
@@ -130,37 +138,35 @@ header {
 .center {
   text-align: center;
 }
-.left{
+
+.left {
   text-align: left;
 }
-.right{
+
+.right {
   text-align: right;
 }
-.logo {
-  max-width: 250px;
-}
 
-nav  {
+nav {
   display: inline-block;
   width: 100%
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
-  padding: 10px;
 }
 
-nav > ul > li {
-display: inline-block;
-list-style-type: none;
-padding: 0;
+nav>ul>li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav>ul>li>a {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 11px;
   margin-top: 8px;
-  text-decoration:none;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.1em;
@@ -173,14 +179,41 @@ nav>ul>li>a {
   display: inline-block;
   width: 100%
 }
+
 main {
-  padding-top: 50px;
+  padding-top: 133px;
 }
 
-
 footer {
+  text-align: left;
+  display:inline-block;
   padding: 10px 0;
-  margin:0 auto;
-  background-color:#F2F2F2;
-  width: auto;
+  background-color: #F2F2F2;
+}
+
+footer >ul{
+  padding:0;
+}
+
+footer>ul>li {
+  list-style-type: none;
+}
+
+footer> ul> li> a{
+  display:inline-block;
+  padding:0 11px;
+  text-transform:none;
+  font-size: .6em;
+  font-weight: 600;
+  color:#F2F2F2;
+}
+
+.social {
+  list-style-type: none;
+}
+
+.social .fab {
+  display: inline-block;
+  font-size: 2em;
+  list-style-type: none;
 }
