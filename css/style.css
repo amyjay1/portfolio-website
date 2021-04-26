@@ -1,55 +1,53 @@
 /*colors used/:
-Primary color (Pink): #fa4144;
-Secondary color (Black):#001622;
-Secondary color (Grey): #707070 */
+Orangy Pink): #fa4144;#FE5F55
+(Black):#001622;
+soft yellow: #FFF3E0 */
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   /* sets the font size to 16px */
   font-weight: 300;
   /* sets the font weight to 300 */
   line-height: 1.6;
   /* sets the line-height to 1.6 * the font-size */
-  background-color: #ffffff;
+  background-color: #FFF3E0;
   color: #001622;
 }
 
 h1,
 h2,
 h3,
-h4
-{
+h4 {
   line-height: 1.4;
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2.75em;
-  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 400;
 }
 
 h2 {
-  font-family: "Open sans", sans-serif;
-  font-size: 2.25em;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
   font-weight: 600;
 }
 
 h3 {
-  font-family: "Open sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.75em;
   font-weight: 400;
 }
 
 h4 {
-  font-family: "Open sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.35em;
   font-weight: 400;
 }
-
 
 a {
   color: #001622;
@@ -62,29 +60,29 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #fa4144;
+  color: #FE5F55;
   text-decoration: none;
 }
 
 a:active {
-  color: #fa4144;
+  color: #FE5F55;
   background-color: #ffffff;
 }
 
 .button {
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #FFF3E0;
   color: #fa4144 !important;
   font-weight: 400;
   padding: 10px 30px;
   border-radius: 4px;
-  border-bottom: 2px solid #fa4144;
+  border-bottom: 2px solid #FE5F55;
   transition: 0.2s opacity;
   text-decoration: none;
 }
 
 .button:visited {
-  color: #fa4144;
+  color: #FE5F55;
 }
 
 .button:hover {
@@ -93,14 +91,14 @@ a:active {
 
 .button.contact {
   display: inline;
-  background-color: transparent;
-  color: #fa4144;
+  background-color: #FFF;
+  color: #FFF;
   text-transform: none;
-  border: 2px solid #fa4144;
+  border: 1px solid #fff;
 }
 
 .button.contact:hover {
-  background-color: #fa4144;
+  background-color: #FE5F55;
   color: #ffffff;
 }
 
@@ -109,15 +107,34 @@ img {
 }
 
 header {
-  display:inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  background-color: #F2F2F2;
+  background-color: #FE5F55;
   text-align: center;
   padding: 10px 0;
-  box-shadow:         4px 1px 5px 0px rgba(50, 50, 50, 0.67);
-  position:fixed;
-  width: 100%;
+  box-shadow: 4px 1px 5px 0px rgba(50, 50, 50, 0.67);
+  position: fixed;
+  width:100%;
+}
+#cdheader{
+background-color: #FFF;
+text-align: center;
+padding: 10px 0;
+box-shadow: 4px 1px 5px 0px rgba(50, 50, 50, 0.67);
+position: fixed;
+width:100%;
+}
+
+.logo{
+  font-family:'Crimson Text', serif;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+a.logo{
+  color:#fff !important;
+}
+
+.logo span {
+  display:none;
 }
 
 /* Layout styling*/
@@ -130,10 +147,25 @@ header {
   /* 25 px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #project.row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
+
+#hero {
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
 
 .center {
   text-align: center;
@@ -147,13 +179,10 @@ header {
   text-align: right;
 }
 
-nav {
-  display: inline-block;
-  width: 100%
-}
 
 nav>ul {
   list-style-type: none;
+  padding: 0;
 }
 
 nav>ul>li {
@@ -168,52 +197,118 @@ nav>ul>li>a {
   margin-top: 8px;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.1em;
-  color: #4a4a4a;
+  font-weight: 400;
+  font-size: 1em;
+  color: #fff !important;
 }
 
 .hero {
-  background-color: #F2F2F2;
+  text-align: left;
+  background-color: #FFF3E0;
   padding: 20px 0;
   display: inline-block;
-  width: 100%
+  width: 100%;
 }
 
+.project img{
+  border:2px solid #FE5F55;
+  border-radius: 50px;
+
+}
+.project2 img{
+  border-radius: 30px;
+}
 main {
-  padding-top: 133px;
+  padding-top: 99px;
 }
 
 footer {
+  color:#fff;
   text-align: left;
-  display:inline-block;
   padding: 10px 0;
-  background-color: #F2F2F2;
-}
-
-footer >ul{
-  padding:0;
-}
-
-footer>ul>li {
-  list-style-type: none;
-}
-
-footer> ul> li> a{
-  display:inline-block;
-  padding:0 11px;
-  text-transform:none;
-  font-size: .6em;
-  font-weight: 600;
-  color:#F2F2F2;
+  background-color: #FE5F55;
 }
 
 .social {
   list-style-type: none;
+  text-align: left;
 }
 
 .social .fab {
-  display: inline-block;
+  color:#fff;
   font-size: 2em;
   list-style-type: none;
+  margin: 0 10px;
+}
+/* ==============================
+Bearable Savings
+================================= */
+
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .logo span {
+    display:inline;
+  }
+
+.col-md-6 {
+  width: 50%
+}
+
+[class*="col-"]{
+  float:left;
+}
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+.col-lg-7 {
+  width: 20%
+}
+.col-lg-5{
+  width: 80%
+}
+
+#about-page h3 {margin-top: 0;}
+}
+/* ==============================
+  X-large devices (1440px or larger)
+  ================================= */
+@media only screen and (min-width: 1400px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+.col-xl-4 {
+  width 50%
+}
+}
+/* Extra-large devices (1920px or larger)*/
+@media only screen and (min-width 1920px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 }
