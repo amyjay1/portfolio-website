@@ -14,7 +14,7 @@ body {
   /* sets the font weight to 300 */
   line-height: 1.6;
   /* sets the line-height to 1.6 * the font-size */
-  background-color: #FEA7A16626;
+  background-color: #FEA7A126;
   color: #001622E6;
 }
 
@@ -26,37 +26,58 @@ body {
   /* sets the font weight to 300 */
   line-height: 1.6;
   /* sets the line-height to 1.6 * the font-size */
-  background-color: ##3A389626;
+  background-color: #3A389666;
   color: #001622;
 }
 
-h1,
-h2,
-h3,
-h4 {
+.bodybears {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  /* sets the font size to 16px */
+  font-weight: 300;
+  /* sets the font weight to 300 */
+  line-height: 1.6;
+  /* sets the line-height to 1.6 * the font-size */
+  background-color: #B9D6AD66;
+  color: #001622;
+}
+
+.bodychefdj {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  /* sets the font size to 16px */
+  font-weight: 300;
+  /* sets the font weight to 300 */
+  line-height: 1.6;
+  /* sets the line-height to 1.6 * the font-size */
+  background-color: #FFF3E0;
+  color: #001622;
+}
+
+h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Crimson Text', serif;
   font-size: 2.15em;
   font-weight: 600;
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Crimson Text", serif;
   font-size: 2em;
   font-weight: 400;
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Crimson Text", serif;
   font-size: 1.75em;
   font-weight: 400;
 }
 
-h4 {
-  font-family: "Poppins", sans-serif;
+h4, .h4 {
+  font-family: "Crimson Text", serif;
   font-size: 1.35em;
   font-weight: 400;
 }
@@ -89,7 +110,7 @@ a:active {
   padding: 10px 30px;
   border-radius: 4px;
   border-bottom: 2px solid #FE5F55;
-  transition-duration: 0.2s opacity;
+  transition-duration: 0.2s;
   text-decoration: none;
 }
 
@@ -118,13 +139,8 @@ img {
   width: 100%;
 }
 
-.amypic {
-  width:20px;
-  height:20px;
-}
-
 header {
-  background-color: #FE5F55;
+  background-color: #FFF;
   text-align: center;
   padding: 10px 0;
   box-shadow: 4px 1px 5px 0px rgba(50, 50, 50, 0.67);
@@ -133,13 +149,13 @@ header {
 }
 
 .logo {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 a.logo {
-  color: #fff !important;
+  color: #FE5F55 !important;
 }
 
 .logo span {
@@ -153,9 +169,9 @@ a.logo {
 
 .row {
   margin: 25px 0;
-  /* 25 px top and bottom, 0 left and right */
 }
 
+/* 25 px top and bottom, 0 left and right */
 .row::after {
   content: "";
   clear: both;
@@ -163,16 +179,39 @@ a.logo {
 }
 
 .project {
-  background-color: #FED6D466;
-  padding: 30px 0;
+  background-color: #FEEEED;
+  padding: 20px 0;
 }
 
-.project .row {
+.project h2 {
+  text-align: center;
+}
+
+.project.row {
   padding-bottom: 25px;
-  border: 2px solid #FED6D4;
-  background-color: #fff;
+  border: 2px solid #FE5F5566;
+  background-color: #FFF;
   padding: 2em 1em;
   border-radius: 5px;
+}
+
+.project img {
+  border: 2px solid #FED6D4;
+  border-radius: 15px;
+}
+
+.project2 img {
+  border-radius: 15px;
+}
+
+.small-image {
+  display: block;
+  text-align: center;
+}
+
+.small-image img {
+  max-width: 150px;
+  margin-top: 2em;
 }
 
 #hero {
@@ -201,6 +240,7 @@ a.logo {
 }
 
 nav>ul {
+  font-family: 'Raleway', sans-serif;
   list-style-type: none;
   padding: 0;
 }
@@ -219,23 +259,33 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1em;
-  color: #fff !important;
+  color: #FE5F55 !important;
 }
 
 .hero {
-  text-align: left;
-  background-color: #FED6D4;
+  text-align: center;
+  background-color: #FE5F55;
   padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+  color: #fff;
 }
 
 .herochef {
-  text-align: left;
   background-color: #F9C74F33;
   padding: 20px 0;
-  display: inline-block;
+}
+
+.herochef h2, .herochef h3 {
+  text-align: left;
+}
+
+.three-columns h2 {
+  text-align: center;
+}
+
+.three-columns svg {
+  text-align: center;
   width: 100%;
+  margin-top: 1em;
 }
 
 .heroword {
@@ -246,15 +296,6 @@ nav>ul>li>a {
   width: 100%;
 }
 
-.project img {
-  border: 2px solid #FED6D4;
-  border-radius: 15px;
-}
-
-.project2 img {
-  border-radius: 30px;
-}
-
 main {
   padding-top: 136px;
 }
@@ -262,21 +303,29 @@ main {
 footer {
   color: #fff;
   text-align: center;
-  padding: 20px 20px;
+  padding: 20px 0;
   background-color: #FE5F55;
 }
 
-.social {
+.social ul {
   list-style-type: none;
-  text-align: left;
+  padding: 0;
+  margin-top: 2em;
+}
+
+.social li {
+  display: inline-block;
 }
 
 .social .fab {
-  float: left;
   color: #fff;
   font-size: 2em;
   list-style-type: none;
   margin: 0 10px;
+}
+
+.copyright {
+  font-size: 70%;
 }
 
 .music {
@@ -358,6 +407,233 @@ footer {
   animation-iteration-count: 1;
 }
 
+.shake-slow {
+  display: inline-block;
+  transform-origin: center center;
+}
+
+.shake-freeze,
+.shake-constant.shake-constant--hover:hover,
+.shake-trigger:hover .shake-constant.shake-constant--hover {
+  animation-play-state: paused;
+}
+
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze, .shake-slow:hover,
+.shake-trigger:hover .shake-slow {
+  animation-play-state: running;
+}
+
+@keyframes shake-slow {
+  2% {
+    transform: translate(2px, 1px) rotate(-0.5deg);
+  }
+
+  4% {
+    transform: translate(-5px, -9px) rotate(-2.5deg);
+  }
+
+  6% {
+    transform: translate(5px, 3px) rotate(2.5deg);
+  }
+
+  8% {
+    transform: translate(5px, 4px) rotate(1.5deg);
+  }
+
+  10% {
+    transform: translate(-4px, -8px) rotate(-0.5deg);
+  }
+
+  12% {
+    transform: translate(-2px, -9px) rotate(1.5deg);
+  }
+
+  14% {
+    transform: translate(0px, 6px) rotate(3.5deg);
+  }
+
+  16% {
+    transform: translate(8px, 2px) rotate(2.5deg);
+  }
+
+  18% {
+    transform: translate(-4px, -1px) rotate(1.5deg);
+  }
+
+  20% {
+    transform: translate(10px, 2px) rotate(-2.5deg);
+  }
+
+  22% {
+    transform: translate(-2px, -4px) rotate(1.5deg);
+  }
+
+  24% {
+    transform: translate(-8px, 5px) rotate(-0.5deg);
+  }
+
+  26% {
+    transform: translate(-3px, -5px) rotate(3.5deg);
+  }
+
+  28% {
+    transform: translate(6px, 2px) rotate(2.5deg);
+  }
+
+  30% {
+    transform: translate(-5px, -2px) rotate(2.5deg);
+  }
+
+  32% {
+    transform: translate(5px, -6px) rotate(-2.5deg);
+  }
+
+  34% {
+    transform: translate(5px, -7px) rotate(-1.5deg);
+  }
+
+  36% {
+    transform: translate(3px, -9px) rotate(0.5deg);
+  }
+
+  38% {
+    transform: translate(6px, -2px) rotate(-0.5deg);
+  }
+
+  40% {
+    transform: translate(-4px, -2px) rotate(0.5deg);
+  }
+
+  42% {
+    transform: translate(7px, -8px) rotate(1.5deg);
+  }
+
+  44% {
+    transform: translate(-4px, 10px) rotate(-1.5deg);
+  }
+
+  46% {
+    transform: translate(-3px, 8px) rotate(-1.5deg);
+  }
+
+  48% {
+    transform: translate(3px, 6px) rotate(-0.5deg);
+  }
+
+  50% {
+    transform: translate(4px, -1px) rotate(-2.5deg);
+  }
+
+  52% {
+    transform: translate(1px, 5px) rotate(-0.5deg);
+  }
+
+  54% {
+    transform: translate(-3px, 7px) rotate(-2.5deg);
+  }
+
+  56% {
+    transform: translate(3px, 3px) rotate(-2.5deg);
+  }
+
+  58% {
+    transform: translate(-8px, -5px) rotate(-1.5deg);
+  }
+
+  60% {
+    transform: translate(1px, -9px) rotate(3.5deg);
+  }
+
+  62% {
+    transform: translate(0px, -3px) rotate(-0.5deg);
+  }
+
+  64% {
+    transform: translate(4px, 2px) rotate(2.5deg);
+  }
+
+  66% {
+    transform: translate(4px, 10px) rotate(1.5deg);
+  }
+
+  68% {
+    transform: translate(1px, 2px) rotate(-2.5deg);
+  }
+
+  70% {
+    transform: translate(-9px, 10px) rotate(0.5deg);
+  }
+
+  72% {
+    transform: translate(-5px, -8px) rotate(0.5deg);
+  }
+
+  74% {
+    transform: translate(-3px, -8px) rotate(3.5deg);
+  }
+
+  76% {
+    transform: translate(-1px, 8px) rotate(3.5deg);
+  }
+
+  78% {
+    transform: translate(-5px, -4px) rotate(0.5deg);
+  }
+
+  80% {
+    transform: translate(-6px, 1px) rotate(1.5deg);
+  }
+
+  82% {
+    transform: translate(-5px, -7px) rotate(1.5deg);
+  }
+
+  84% {
+    transform: translate(1px, -6px) rotate(-0.5deg);
+  }
+
+  86% {
+    transform: translate(-8px, -4px) rotate(3.5deg);
+  }
+
+  88% {
+    transform: translate(-6px, 7px) rotate(-1.5deg);
+  }
+
+  90% {
+    transform: translate(9px, 6px) rotate(-2.5deg);
+  }
+
+  92% {
+    transform: translate(9px, -8px) rotate(3.5deg);
+  }
+
+  94% {
+    transform: translate(3px, 3px) rotate(2.5deg);
+  }
+
+  96% {
+    transform: translate(-6px, -7px) rotate(2.5deg);
+  }
+
+  98% {
+    transform: translate(5px, -2px) rotate(-0.5deg);
+  }
+
+  0%, 100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+
+.shake-slow:hover,
+.shake-trigger:hover .shake-slow, .shake-slow.shake-freeze, .shake-slow.shake-constant {
+  animation-name: shake-slow;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -365,6 +641,60 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0;
+  }
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .svg-img {
+    height: 46px;
+    display: flex;
+    align-items: center;
   }
 
   nav {
@@ -410,6 +740,10 @@ Medium devices (640px and larger)
   #about-page h3 {
     margin-top: 0;
   }
+
+  .story h2 {
+    margin-top: 0;
+  }
 }
 
 /* ==============================
@@ -440,6 +774,7 @@ Large devices (1024px or larger)
   margin-right: auto;
 }
 
+
 /* ==============================
   X-large devices (1440px or larger)
   ================================= */
@@ -450,7 +785,7 @@ Large devices (1024px or larger)
   }
 
   .col-xl-4 {
-    width 50%
+    width 50%;
   }
 
   /* ==============================
@@ -461,3 +796,4 @@ Extra-large devices (1920px or larger)
       text-align: unset;
       padding: 20px 0 13px;
     }
+}
