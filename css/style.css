@@ -26,7 +26,7 @@ body {
   /* sets the font weight to 300 */
   line-height: 1.6;
   /* sets the line-height to 1.6 * the font-size */
-  background-color: #3A389666;
+  background-color: #3A389633;
   color: #001622;
 }
 
@@ -42,17 +42,6 @@ body {
   color: #001622;
 }
 
-.bodychefdj {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  /* sets the font size to 16px */
-  font-weight: 300;
-  /* sets the font weight to 300 */
-  line-height: 1.6;
-  /* sets the line-height to 1.6 * the font-size */
-  background-color: #FFF3E0;
-  color: #001622;
-}
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -81,7 +70,9 @@ h4, .h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-
+/* ==============================
+buttons and hyperlinks
+================================= */
 a {
   color: #001622;
 }
@@ -109,10 +100,9 @@ a:active {
   font-weight: 400;
   padding: 10px 30px;
   border-radius: 2px;
-  border-bottom:2px solid #FE5F55;
-  transition-duration: 0.2s;
+  border-bottom: 2px solid #FE5F55;
+  transition: 0.2s opacity;
   text-decoration: none;
-
 }
 
 .button:visited {
@@ -120,27 +110,28 @@ a:active {
 }
 
 .button:hover {
-  opacity: 10;
-  color:#FE5F55;
+  opacity: 0.7;
+  color: #FE5F55;
 }
 
 .button.contact {
   display: inline-block;
   background-color: #FFF;
-  color: #FFF;
   text-transform: none;
   border: 1px solid #fff;
 }
 
 .button.contact:hover {
   background-color: #FE5F55;
-  color:#FFF;
+  color: #FFF !important;
 }
 
 img {
   width: 100%;
 }
-
+/* ==============================
+headers and footers and all that stuff
+================================= */
 header {
   background-color: #FE5F55;
   text-align: center;
@@ -163,85 +154,8 @@ a.logo {
   display: none;
 }
 
-/* Layout styling*/
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 55px 0;
-}
-
-/* 25 px top and bottom, 0 left and right */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.project {
-  background-color: #FEEEED;
-  padding: 20px 0;
-}
-
-.project h2 {
-  text-align: center;
-}
-
-.project.row {
-  padding-bottom: 25px;
-  border: 2px solid #FE5F5566;
-  background-color: #FFF;
-  padding: 2em 1em;
-  border-radius: 5px;
-}
-
-.project img {
-  border: 2px solid #FED6D4;
-  border-radius: 15px;
-}
-
-.project2 img {
-  border-radius: 15px;
-}
-
-.small-image {
-  display: block;
-  text-align: center;
-}
-
-.small-image img {
-  max-width: 150px;
-  margin-top: 2em;
-}
-
-#hero {
-  text-align: center;
-}
-
-#hero span {
-  display: block;
-}
-
-.center {
-  text-align: center;
-}
-
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: right;
-}
-
-.wrap {
-  display: flex;
-  align-items: center
-}
-
 nav>ul {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   list-style-type: none;
   padding: 0;
 }
@@ -262,49 +176,6 @@ nav>ul>li>a {
   font-size: 1em;
   color: #FFF !important;
 }
-
-.hero {
-  text-align: center;
-  background-color: #FFD97E;
-  color: #001622E6;
-  padding: 6em 0;
-}
-section {
-  padding:65px;
-}
-.sectionchef{
-  background-color: #F9C74F33;
-}
-.herochef {
-  background-color: #F9C74F33;
-}
-
-.herochef h2, .herochef h3 {
-  text-align: left;
-}
-
-.three-columns h2 {
-  text-align: center;
-}
-
-.three-columns svg {
-  text-align: center;
-  width: 100%;
-  margin-top: 2em;
-}
-
-.heroword {
-  text-align: left;
-  background-color: #7775B666;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-main {
-  padding-top: 1px;
-}
-
 footer {
   color: #fff;
   text-align: center;
@@ -333,6 +204,175 @@ footer {
   font-size: 70%;
 }
 
+
+/* ==============================
+body layout stuff
+================================= */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 55px 0;
+}
+/* 25 px top and bottom, 0 left and right */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+main {
+  padding-top: 1px;
+}
+
+.project {
+  background-color: #FEEEED;
+  padding: 20px 0;
+}
+
+.project h2 {
+  text-align: center;
+}
+
+.project .row {
+  padding-bottom: 25px;
+  border: 2px solid #FE5F5566;
+  background-color: #FFF;
+  padding: 2em 1em;
+  border-radius: 5px;
+}
+
+.project img {
+  border: 2px solid #FED6D4;
+  border-radius: 15px;
+}
+
+.project2 img {
+  border-radius: 15px;
+}
+
+.small-image {
+  display: inline-block;
+}
+
+.small-image img {
+  max-width: 150px;
+  margin-top: 2em;
+}
+
+.flex-column {
+  display: flex;
+  align-items: center;
+}
+.flex-colum2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em;
+}
+
+.hero {
+  text-align: center;
+  background-color: #FFD97E;
+  color: #001622E6;
+  padding: 6em 0;
+}
+
+#hero {
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.wrap {
+  display: flex;
+  align-items: center
+}
+
+.illustration-p {
+  margin-bottom: 40px;
+}
+
+section {
+  padding: 65px;
+}
+
+.three-columns h2 {
+  text-align: center;
+}
+
+.three-columns svg {
+  text-align: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.heroword {
+  text-align: left;
+  background-color: #7775B666;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* ==============================
+chefdj
+================================= */
+.herochef .flex-column h1 {
+  margin-right: 3em;
+}
+
+.herochef .small-image img {
+  margin-top: 0;
+}
+
+.herochef {
+  background-color: #F9C74F33;
+}
+
+.herochef h2, .herochef h3 {
+  text-align: left;
+}
+
+.herochef .two-column img{
+  max-width: 35%;
+  float:left;
+  padding: 0 10px;
+  border-radius: 15px;
+}
+.sectionchef {
+  background-color: #F9C74F33;
+}
+
+.bodychefdj {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  /* sets the font size to 16px */
+  font-weight: 300;
+  /* sets the font weight to 300 */
+  line-height: 1.6;
+  /* sets the line-height to 1.6 * the font-size */
+  background-color: #FFF3E0;
+  color: #001622;
+}
+
+/* ==============================
+annimations
+================================= */
 .music {
   animation-duration: 30s;
   animation-name: music-move;
@@ -703,8 +743,8 @@ Medium devices (640px and larger)
   }
 
   .svg-icon {
-  display:inline-flex;
-    align-self:center;
+    display: inline-flex;
+    align-self: center;
   }
 
   nav {
@@ -734,7 +774,7 @@ Medium devices (640px and larger)
     padding: 10px;
   }
 
-  .project-page h1, .project-page h2, .project-page p, .project-page h3{
+  .project-page h2, .project-page p, .project-page h3 {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -742,10 +782,9 @@ Medium devices (640px and larger)
 
   .pics img {
     border-radius: 30px;
-    max-width:33.33%;
+    max-width: 33.33%;
     float: left;
     padding: 0 10px;
-
   }
 
   .pics2 img {
@@ -755,9 +794,14 @@ Medium devices (640px and larger)
     border-radius: 15px;
   }
 
-.pic3 img{
-  float:right;
-}
+  .pic3 img {
+    float: right;
+
+  }
+  .pics4 img{
+    display: flex;
+    justify-content: center;
+  }
   #about-page h3 {
     margin-top: 0;
   }
@@ -834,7 +878,6 @@ Large devices (1024px or larger)
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* ==============================
   X-large devices (1440px or larger)
