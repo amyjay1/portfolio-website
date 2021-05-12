@@ -41,8 +41,9 @@ body {
   background-color: #B9D6AD66;
   color: #001622;
 }
-
-
+.svg-bears{
+  text-align: left;
+}
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -70,6 +71,7 @@ h4, .h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 /* ==============================
 buttons and hyperlinks
 ================================= */
@@ -129,6 +131,7 @@ a:active {
 img {
   width: 100%;
 }
+
 /* ==============================
 headers and footers and all that stuff
 ================================= */
@@ -176,6 +179,25 @@ nav>ul>li>a {
   font-size: 1em;
   color: #FFF !important;
 }
+
+.div-wrapper img {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+/*.hero-ill img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}*/
+.wrapper {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
 footer {
   color: #fff;
   text-align: center;
@@ -204,7 +226,15 @@ footer {
   font-size: 70%;
 }
 
-
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+}
 /* ==============================
 body layout stuff
 ================================= */
@@ -212,9 +242,10 @@ body layout stuff
   padding: 0 15px;
 }
 
-.row {
-  margin: 55px 0;
+.bodybears section:nth-of-type(even) {
+  background-color: #FFF;
 }
+
 /* 25 px top and bottom, 0 left and right */
 .row::after {
   content: "";
@@ -223,7 +254,7 @@ body layout stuff
 }
 
 main {
-  padding-top: 1px;
+  padding-top: 105px;
 }
 
 .project {
@@ -241,6 +272,7 @@ main {
   background-color: #FFF;
   padding: 2em 1em;
   border-radius: 5px;
+  margin: 55px 0;
 }
 
 .project img {
@@ -248,8 +280,12 @@ main {
   border-radius: 15px;
 }
 
-.project2 img {
+.project-page img {
   border-radius: 15px;
+}
+
+.screens-space img {
+  margin-bottom: 20px;
 }
 
 .small-image {
@@ -258,19 +294,18 @@ main {
 
 .small-image img {
   max-width: 150px;
-  margin-top: 2em;
 }
 
 .flex-column {
   display: flex;
   align-items: center;
 }
-.flex-colum2 {
+
+/*.flex-column2 {
   display: flex;
-  justify-content: space-between;
   margin: 3em;
 }
-
+*/
 .hero {
   text-align: center;
   background-color: #FFD97E;
@@ -308,8 +343,9 @@ main {
 }
 
 section {
-  padding: 65px;
+  padding: 30px 0;
 }
+
 
 .three-columns h2 {
   text-align: center;
@@ -327,6 +363,11 @@ section {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+video {
+  display: flex;
+  justify-content: center;
 }
 
 /* ==============================
@@ -348,12 +389,13 @@ chefdj
   text-align: left;
 }
 
-.herochef .two-column img{
-  max-width: 35%;
-  float:left;
+.herochef .two-column img {
+  max-width: 45%;
+  float: left;
   padding: 0 10px;
   border-radius: 15px;
 }
+
 .sectionchef {
   background-color: #F9C74F33;
 }
@@ -368,6 +410,24 @@ chefdj
   /* sets the line-height to 1.6 * the font-size */
   background-color: #FFF3E0;
   color: #001622;
+}
+
+.pics2-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.pics2-grid img {
+  padding: 5px;
+}
+
+.abtest-img img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pg-morespace {
+  margin-bottom: 50px
 }
 
 /* ==============================
@@ -678,7 +738,13 @@ annimations
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -740,6 +806,7 @@ Medium devices (640px and larger)
     height: 46px;
     display: flex;
     align-items: center;
+    margin-top: 65px;
   }
 
   .svg-icon {
@@ -774,11 +841,12 @@ Medium devices (640px and larger)
     padding: 10px;
   }
 
-  .project-page h2, .project-page p, .project-page h3 {
+  .project-page h2, .project-page p, .project-page h3, .svg-image, .project-page section:first-child .column {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
+
 
   .pics img {
     border-radius: 30px;
@@ -788,7 +856,7 @@ Medium devices (640px and larger)
   }
 
   .pics2 img {
-    max-width: 25%;
+    max-width: 100%;
     float: left;
     padding: 0 10px;
     border-radius: 15px;
@@ -796,18 +864,60 @@ Medium devices (640px and larger)
 
   .pic3 img {
     float: right;
-
   }
-  .pics4 img{
+
+  .intro {
+    display: flex;
+    align-items: center;
+  }
+
+  .herochef h1 {
+    margin-right: 30px;
+  }
+
+  .pics4 img {
     display: flex;
     justify-content: center;
   }
+
+  .pics-smaller img {
+    max-width: 80%;
+  }
+
+  .pics-smaller {
+    text-align: center;
+  }
+
   #about-page h3 {
     margin-top: 0;
   }
 
   .story h2 {
     margin-top: 0;
+  }
+
+  .pics2-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .abtest-img img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .ab-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .abtest1-img1 img {
+    float: right;
+  }
+
+  .abtest1-img2 img {
+    float: left;
   }
 }
 
@@ -871,12 +981,12 @@ Large devices (1024px or larger)
   #about-page h3 {
     margin-top: 0;
   }
-}
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ==============================
@@ -889,15 +999,16 @@ Large devices (1024px or larger)
   }
 
   .col-xl-4 {
-    width 50%;
+    width: 50%;
   }
+}
 
-  /* ==============================
+/* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-  @media only screen and (min-width 1920px) {
-    header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
+@media only screen and (min-width 1920px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
   }
+}
