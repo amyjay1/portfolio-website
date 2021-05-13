@@ -41,9 +41,11 @@ body {
   background-color: #B9D6AD66;
   color: #001622;
 }
-.svg-bears{
+
+.svg-bears {
   text-align: left;
 }
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -227,14 +229,15 @@ footer {
 }
 
 .full-width {
-	left: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
-	max-width: 100vw;
-	position: relative;
-	right: 50%;
-	width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
 }
+
 /* ==============================
 body layout stuff
 ================================= */
@@ -345,7 +348,6 @@ main {
 section {
   padding: 30px 0;
 }
-
 
 .three-columns h2 {
   text-align: center;
@@ -738,13 +740,167 @@ annimations
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+
+/* ==============================
+Annimation for herosection on index
+================================= */
+.scene {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+
+.cloud1 {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 100px;
+  right: -50px;
+  animation: float2 4s ease-in-out infinite alternate;
 }
+
+.cloud2 {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: float1 4s ease-in-out infinite alternate;
+}
+
+.flier {
+  pointer-events: none;
+}
+
+.flier {
+  animation: fly 50s linear infinite;
+  pointer-events: none !important;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%) translateY(-120%) rotateZ(0);
+  position: fixed;
+  animation-delay: 1s;
+  z-index: 999999;
+}
+
+@keyframes float1 {
+  from {
+    transform: translateX(-50px);
+  }
+
+  to {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes float2 {
+  from {
+    transform: translateX(50px);
+  }
+
+  to {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes fly {
+  98.001%, 0% {
+    display: block;
+    transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+  }
+
+  15% {
+    transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+  }
+
+  15.001%, 18% {
+    transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+  }
+
+  40% {
+    transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+  }
+
+  40.001%, 43% {
+    transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+  }
+
+  65% {
+    transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+  }
+
+  65.001%, 68% {
+    transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+  }
+
+  95% {
+    transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+  }
+}
+
+/* ==============================
+annimation practice
+================================= */
+
+.scene {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.upper {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.cloud1 {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 100px;
+  right: -50px;
+  animation: float2 4s ease-in-out infinite alternate;
+}
+
+.cloud2 {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: float1 4s ease-in-out infinite alternate;
+}
+
+@keyframes float1 {
+  from {
+    transform: translateX(-50px);
+  }
+
+  to {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes float2 {
+  from {
+    transform: translateX(50px);
+  }
+
+  to {
+    transform: translateX(-50px);
+  }
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -847,6 +1003,9 @@ Medium devices (640px and larger)
     margin-right: auto;
   }
 
+  .project-page .svg-image {
+    width: auto;
+  }
 
   .pics img {
     border-radius: 30px;
