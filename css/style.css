@@ -134,15 +134,32 @@ img {
   width: 100%;
 }
 
+.chefdj-img img {
+  width: 55%;
+  margin: auto;
+  display: block;
+}
+
+.chefdj-img2 img {
+  width: 85% margin: auto;
+  display: block;
+}
+
+.wordup-img img {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
 /* ==============================
 headers and footers and all that stuff
 ================================= */
 header {
   background-color: #FE5F55;
-  text-align: center;
   box-shadow: 4px 1px 5px 0px rgba(50, 50, 50, 0.67);
   position: fixed;
   width: 100%;
+  padding: 10px 0 4px;
 }
 
 .logo {
@@ -160,17 +177,16 @@ a.logo {
 }
 
 nav>ul {
-  font-family: 'Poppins', sans-serif;
   list-style-type: none;
-  padding: 0;
+  padding: 0px 5px 5px;
+  margin: 0;
 }
 
-nav>ul>li {
+/*nav>ul>li {
   display: inline-block;
   list-style-type: none;
   padding: 0;
-}
-
+}*/
 nav>ul>li>a {
   display: inline-block;
   padding: 0 15px;
@@ -180,6 +196,45 @@ nav>ul>li>a {
   font-weight: 400;
   font-size: 1em;
   color: #FFF !important;
+}
+
+.navtoggle:hover li {
+  opacity: 0.7;
+  transition: 0.2s linear;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #FFD97E66;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 .div-wrapper img {
@@ -238,6 +293,12 @@ footer {
   width: 100vw;
 }
 
+.video-div {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
 /* ==============================
 body layout stuff
 ================================= */
@@ -257,7 +318,7 @@ body layout stuff
 }
 
 main {
-  padding-top: 105px;
+  padding-top: 56px;
 }
 
 .project {
@@ -287,10 +348,6 @@ main {
   border-radius: 15px;
 }
 
-.screens-space img {
-  margin-bottom: 20px;
-}
-
 .small-image {
   display: inline-block;
 }
@@ -302,13 +359,9 @@ main {
 .flex-column {
   display: flex;
   align-items: center;
+  margin: 1.5em;
 }
 
-/*.flex-column2 {
-  display: flex;
-  margin: 3em;
-}
-*/
 .hero {
   text-align: center;
   background-color: #FFD97E;
@@ -341,7 +394,7 @@ main {
   align-items: center
 }
 
-.illustration-p {
+.paragraph-space {
   margin-bottom: 40px;
 }
 
@@ -365,11 +418,6 @@ section {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-}
-
-video {
-  display: flex;
-  justify-content: center;
 }
 
 /* ==============================
@@ -417,6 +465,7 @@ chefdj
 .pics2-grid {
   display: grid;
   grid-template-columns: auto auto;
+  text-align: center;
 }
 
 .pics2-grid img {
@@ -432,6 +481,27 @@ chefdj
   margin-bottom: 50px
 }
 
+.flex-container-bears {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.bodychefdj #section-2 .column {
+  padding: 25px 0;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wordup-row {
+  padding: 5px;
+}
+
 /* ==============================
 annimations
 ================================= */
@@ -441,77 +511,6 @@ annimations
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
-}
-
-@-webkit-keyframes swing {
-  15% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-  }
-
-  30% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-
-  50% {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px);
-  }
-
-  65% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-  }
-
-  80% {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@keyframes swing {
-  15% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-  }
-
-  30% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-
-  50% {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px);
-  }
-
-  65% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-  }
-
-  80% {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-.swing:hover {
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
 }
 
 .shake-slow {
@@ -844,7 +843,6 @@ Annimation for herosection on index
 /* ==============================
 annimation practice
 ================================= */
-
 .scene {
   width: 500px;
   height: 500px;
@@ -958,11 +956,12 @@ Medium devices (640px and larger)
     width: 100%;
   }
 
-  .svg-img {
-    height: 46px;
+  .bodychefdj #section-2 .column {
     display: flex;
     align-items: center;
-    margin-top: 65px;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .svg-icon {
@@ -973,11 +972,20 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
-  nav ul {
-    margin: 0;
+  nav>ul>li {
+    display: inline-block;
+    padding: 10px 15px 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .logo span {
@@ -985,7 +993,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 77px;
+    padding-top: 44px;
   }
 
   .col-md-6 {
@@ -1058,6 +1066,7 @@ Medium devices (640px and larger)
   .pics2-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    align-content: center;
   }
 
   .abtest-img img {
@@ -1146,6 +1155,39 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  .bodychefdj #section-2 .column {
+    padding: 25px;
+  }
+
+  .pics2-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .row {
+    padding: 70px;
+  }
+
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.small-screens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 75%;
 }
 
 /* ==============================

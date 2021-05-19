@@ -18,17 +18,20 @@
 
  <body class="bodychefdj project-page">
    <header>
-     <div class="container">
-       <a href="index.html" class="logo">Amy N<span>icole</span> Jackson</a>
-       <nav>
-         <ul class="navigation">
-           <li><a href="index.html">Work</a></li>
-           <li><a href="about.html">About</a></li>
-           <li><a href="#contact">Contact</a></li>
-         </ul>
-       </nav>
-     </div>
-   </header>
+ 		<div class="container">
+ 			<div class="navtoggle" id="myNavtoggle">
+ 				<a href="index.html" class="logo">Amy N<span>icole</span> Jackson</a>
+ 				<nav>
+ 					<ul class="navigation">
+ 						<li><a href="index.html">Work</a></li>
+ 						<li><a href="about.html">About</a></li>
+ 						<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+ 						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+ 					</ul>
+ 				</nav>
+ 			</div>
+ 		</div>
+ 	</header>
    <main>
      <section class="herochef">
        <div class="container">
@@ -40,15 +43,15 @@
                <img src="img/chefdj/cdl-lg.png" class="shake-slow" alt="chefdj logo">
              </picture>
            </div>
-           <div class="column">
+           <div class="column ">
              <h3> A fun design concept that combines music and cooking.</h3>
              <p> Chef DJ gives you a place to save your favorite music and recipes all in one place. Want music suggestions based on your recipies or your shopping list? Let Chef DJ do it. You can also create playlists for your favorite recipes and
                share them with your friends and family.</p>
              <div class="row">
-               <div class="column">
+               <div class="column chefdj-img2">
                  <picture>
-                   <source srcset="img/chefdj/cd1Y-s.png" media="(max-width:767px)">
-                   <img src="img/chefdj/cd1Y-lg.png" alt="first screens">
+                   <source srcset="img/chefdj/cd-music-s.png" media="(max-width:767px)">
+                   <img src="img/chefdj/cd-music-lg.png" alt="first screens">
                  </picture>
                </div>
              </div>
@@ -56,37 +59,33 @@
          </div>
        </div>
      </section>
-     <section class="three-columns">
+     <section class="three-columns" id="section-2">
        <div class="container">
-         <div>
-           <div class="svg-img">
-             <img src="icon/glasses.svg" width="52" height="22" alt="glasses icon">
+         <div class="row">
+           <div class="column svg-img col-lg-4 ">
+             <img src="icon/glasses-new.svg" width="70" height="53" alt="glasses icon">
+             <h2>Overview</h2>
+             <p>Music and Cooking go together like peas and carrots. Chef DJ give you a place to save your favorite recipes, share them with your firends,get music suggestions and create your favorite playlists.</p>
            </div>
-           <h2>Overview</h2>
-         </div>
-         <p>Music and Cooking go together like peas and carrots. Chef DJ give you a place to save your favorite recipes, share them with your firends,get music suggestions and create your favorite playlists.</p>
-         <div>
-           <div class="svg-img">
-             <img src="icon/flag.svg" width="32" height="44" alt="flag icon">
+           <div class="column svg-img col-lg-4 ">
+             <img src="icon/flag-new.svg" width="70" height="53" alt="flag icon">
+             <h2>Objective</h2>
+             <p>To create a bodly different recipe app with a uniqe concept making it stand apart from all the recipe apps out there and to give users a place where they can easliy access food and music together.</p>
            </div>
-           <h2>Objective</h2>
-         </div>
-         <p>To create a bodly different recipe app with a uniqe concept making it stand apart from all the recipe apps out there and to give users a place where they can easliy access food and music together.</p>
-         <div>
-           <div class="svg-img">
-             <img src="icon/puzzle.svg" width="47" height="46" alt="puzzle icon">
+           <div class="column svg-img col-lg-4 ">
+             <img src="icon/puzzle-new.svg" width="70" height="53" alt="puzzle icon">
+             <h2>Challenge</h2>
+             <p>This project went through many phases and taught me a lot about the importance of keeping the UI as clean and simple as possible so that users can navigate with ease and enjoyment.</p>
            </div>
-           <h2>Challenge</h2>
          </div>
-         <p>This project went through many phases and taught me a lot about the importance of keeping the UI as clean and simple as possible so that users can navigate with ease and enjoyment.</p>
        </div>
      </section>
      <section class="sectionchef">
        <div class="container">
          <div class="row">
-           <div class="column">
+           <div class="column ">
              <h2> Illustrations</h2>
-             <p class="illustration-p">These vibrant and bold illustrations elicit positve energy while creating a fun, approachable and user friendly tone. The simplified shapes depicting musical instruments were created to provoke a dramatic and
+             <p class="paragraph-space">These vibrant and bold illustrations elicit positve energy while creating a fun, approachable and user friendly tone. The simplified shapes depicting musical instruments were created to provoke a dramatic and
                memorable backdrop to
                complement the simple high angle shots of food.</p>
              <div class="column pics2-grid small-image">
@@ -127,15 +126,15 @@
      <section class="sectionchef">
        <div class="container">
          <div class="row">
-           <div class="column screens-space">
+           <div class="column">
              <h2>Navigation</h2>
              <p>After serveral user tests and various iterations, careful consideration of the color, size and placement of UI elements helped to create visual hierarchy that aims to promote usability and allow users to
                navigate delightfully
                throughout the app.
              </p>
              <picture>
-               <source srcset="img/chefdj/navig-2-s.png" media="(max-width:767px)">
-               <img src="img/chefdj/navig-2-lg.png" alt="navigation screens">
+               <source srcset="img/chefdj/navigb-s.png" media="(max-width:767px)">
+               <img src="img/chefdj/navigb-lg.png" alt="navigation screens">
              </picture>
            </div>
          </div>
@@ -144,33 +143,28 @@
      <section>
        <div class="container">
          <div class="row">
-           <div class="column pics2 project2">
+           <div class="column chefdj-img">
              <h2> A/B Testing </h2>
-             <div>
                <p>65% of users voted on the stero with the frying pan in the speaker of the radio mostly because they preferred the simplicity of the design. Some also said they preferred it because it felt more on brand with the app than the
                  abstract
                  egg shape on the far right.</p>
-               <div class="row">
-                 <picture class>
-                   <source srcset="img/chefdj/ab-1-s.png" media="(max-width:767px)">
-                   <img src="img/chefdj/ab-2-lg.png" alt="first screens">
+                 <picture>
+                   <source srcset="img/chefdj/cd-ab-s.png" media="(max-width:767px)">
+                   <img src="img/chefdj/cd-ab-lg.png" alt="first screens">
                  </picture>
-               </div>
-             </div>
              <p>The initial screens (below) contain backgrounds with shapes depicting food (meat, apple, egg and avocado) but these felt less on brand with the app and the users preferred the musical instrument shapes.</p>
              <picture>
-               <source srcset="img/chefdj/ab-2-s.png" media="(max-width:767px)">
-               <img src="img/chefdj/ab-2-lg.png" alt="A/B Testing">
+               <source srcset="img/chefdj/cd-old-s.png" media="(max-width:767px)">
+               <img src="img/chefdj/cd-old-lg.png" alt="A/B Testing">
              </picture>
            </div>
          </div>
-       </div>
      </section>
      <section>
        <div class="container">
          <picture>
-           <source srcset="img/chefdj/final-s.png" media="(max-width:767px)">
-           <img src="img/chefdj/final-lg.png" alt="screens">
+           <source srcset="img/chefdj/finalb-s.png" media="(max-width:767px)">
+           <img src="img/chefdj/finalb-lg.png" alt="screens">
          </picture>
        </div>
      </section>

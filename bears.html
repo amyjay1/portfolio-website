@@ -18,14 +18,17 @@
 <body class="bodybears project-page">
 	<header>
 		<div class="container">
-			<a href="index.html" class="logo">Amy N<span>icole </span> Jackson</a>
-			<nav>
-				<ul>
-					<li><a href="index.html">Work</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+			<div class="navtoggle" id="myNavtoggle">
+				<a href="index.html" class="logo">Amy N<span>icole</span> Jackson</a>
+				<nav>
+					<ul class="navigation">
+						<li><a href="index.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<main>
@@ -79,7 +82,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="column">
-						<h3> User Flows</h3>
+						<h2> User Flows</h2>
 						<picture>
 							<source srcset="img/bs/bsuf-s.png" media="(max-width:767px)">
 							<img src="img/bs/bsuf-lg.png" alt="Bearable Savings User Flows">
@@ -93,7 +96,7 @@
 				<div class="row">
 					<div class="svg-image">
 						<img src="icon/wf.svg" width="60" height="60" alt="wireframing icon">
-						<h3> Wireframing</h3>
+						<h2> Wireframing</h2>
 						<p> Throughout my coursework with CareerFoundry I’ve learned the importance of this initial, raw presentation of ideas and how its purpose is not to impress users but to have them impress us with their insight.</p>
 						<p class="illustration-p"> This phase opens up conversations about depicting concepts, designs, and layouts among many other important topics.</p>
 						<picture>
@@ -104,33 +107,19 @@
 				</div>
 			</div>
 		</section>
-		<section class="project2">
+		<section>
 			<div class="container">
-				<div class="column pics">
+				<div class="row">
 					<div class="svg-image">
 						<img src="icon/airplane.svg" width="55" height="55" alt="airplane icon">
 					</div>
-					<h3> Onboarding </h3>
+					<h2> Onboarding </h2>
 					<p> These initial screens seek to create a smooth and effective onboarding experience while quickly communicating important features of the app with some friendly and cute illustrations. </p>
-					<div class="row">
-						<div class="column screens-space pics2-grid">
-							<picture>
-								<source srcset="img/bs/ob1-s.jpeg" media="(max-width:767px)">
-								<img src="img/bs/ob1-lg.jpeg" alt="Bearable Savings Onboarding Screens">
-							</picture>
-							<div class="column">
-								<picture>
-									<source srcset="img/bs/ob2-s.jpeg" media="(max-width:767px)">
-									<img src="img/bs/ob2-lg.jpeg" alt="Bearable Savings Onboarding Screens">
-								</picture>
-								<div class="column">
-									<picture>
-										<source srcset="img/bs/ob3-s.jpeg" media="(max-width:767px)">
-										<img src="img/bs/ob3-lg.jpeg" alt="Bearable Savings Onboarding Screens">
-									</picture>
-								</div>
-							</div>
-						</div>
+					<div class="column flex-column">
+						<picture>
+							<source srcset="img/bs/ob-3-s.png" media="(max-width:767px)">
+							<img src="img/bs/ob-3-lg.png" alt="Bearable Savings Onboarding Screens">
+						</picture>
 					</div>
 				</div>
 			</div>
@@ -138,11 +127,11 @@
 		<section class="project2">
 			<div class="container">
 				<div class="row">
-					<div class="column svg-image">
+					<div class="column video">
 						<img src="icon/home.svg" width="55" height="55" alt="home icon">
-						<h3> Home Screens </h3>
-						<p class="pg-morespace"> Home is a place where data on the user’s finances (how much money they spend and on what) is displayed as well as what their goals are and how much time they have to meet them.</p>
-						<video width="250" controls>
+						<h2> Home Screens </h2>
+						<p> Home is a place where data on the user’s finances (how much money they spend and on what) is displayed as well as what their goals are and how much time they have to meet them.</p>
+						<video width="200" controls>
 							<source src="vid/home-bears.mp4" type="video/mp4">
 							<source src="vid/home-bears.mp4" type="video/ogg">
 							Your browser does not support HTML video.
@@ -154,7 +143,7 @@
 		<section class="project2">
 			<div class="container">
 				<img src="icon/savings-goals.svg" width="55" height="55" alt="savings icon">
-				<h3> Savings Screens </h3>
+				<h2> Savings Screens </h2>
 				<p> Saving money can be tough, especially when you don’t have a lot of time to do so. By providing personalized information on how a user can save based on their actual finances, the tool itself can provide financial advice during these
 					finite periods of saving. </p>
 				<div class="row">
@@ -180,21 +169,16 @@
 			</div>
 		</section>
 		<section class="project2">
-			<div class="container">
-				<div class="column pics screens-space">
+			<div class="container container-flex-bears">
+				<div class="column pics container-flex">
 					<img src="icon/find-job.svg" width="55" height="55" alt="find a job icon">
-					<h3> Find a Microgig</h3>
+					<h2> Find a Microgig</h2>
 					<p> There are lots of microgig possibilities online and putting them together in one place can help users keep track of what kinds of opportunities they can take to get a little paw-ket change. </p>
-					<div class="row pics2-grid">
+					<div class="row">
 						<picture>
-							<source srcset="img/bs/gig-1-s.jpeg" media="(max-width:767px)">
-							<img src="img/bs/gig-1-lg.jpeg" alt="Bearable Savings Find a Gig Screens">
+							<source srcset="img/bs/mgig-s.png" media="(max-width:767px)">
+							<img src="img/bs/mgig-lg.png" alt="Bearable Savings Find a Gig Screens">
 						</picture>
-						<picture>
-							<source srcset="img/bs/gig-2-s.jpeg" media="(max-width:767px)">
-							<img src="img/bs/gig-2-lg.jpeg" alt="Bearable Savings Find a Gig Screens">
-						</picture>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -202,7 +186,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="column">
-						<h3> All Screens</h3>
+						<h2> All Screens</h2>
 						<picture>
 							<source srcset="img/bs/all-s.jpeg" media="(max-width:767px)">
 							<img src="img/bs/all-lg.jpeg" alt="Bearable Savings Find a Gig Screens">
@@ -211,15 +195,16 @@
 				</div>
 			</div>
 		</section>
-		<section class="project2">
+		<section>
 			<div class="container">
-				<h3 class="center"> </h3>
-				<p> A fun little spinner I learned to annimate.</p>
-				<video width="250" controls>
-					<source src="vid/bear-spin.mp4" type="video/mp4">
-					<source src="vid/bear-spin.mp4" type="video/ogg">
-					Your browser does not support HTML video.
-				</video>
+				<div class="video">
+					<H2> A fun little spinner I learned to annimate.</H2>
+					<video width="200" controls>
+						<source src="vid/bear-spin.mp4" type="video/mp4">
+						<source src="vid/bear-spin.mp4" type="video/ogg">
+						Your browser does not support HTML video.
+					</video>
+				</div>
 			</div>
 		</section>
 	</main>

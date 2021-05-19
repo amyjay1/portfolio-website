@@ -21,42 +21,40 @@
 <body class="bodywordup project-page">
 	<header>
 		<div class="container">
-			<a href="index.html" class="logo">Amy N<span>icole </span> Jackson</a>
-			<nav>
-				<ul>
-					<li><a href="index.html">Work</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+			<div class="navtoggle" id="myNavtoggle">
+				<a href="index.html" class="logo">Amy N<span>icole</span> Jackson</a>
+				<nav>
+					<ul class="navigation">
+						<li><a href="index.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<main>
 		<section>
 			<div class="container">
-				<div class="row">
+				<div>
 					<div class="column">
-						<svg xmlns="http://www.w3.org/2000/svg" width="284" height="92" viewBox="0 0 284 92">
-							<text id="wordʌp_" data-name="wordʌp " transform="translate(142 72)" fill="#3a3896" font-size="79" font-family="Karla-Regular, Karla">
-								<tspan x="-141.331" y="0">word</tspan>
-								<tspan y="0" font-family="Helvetica">ʌ</tspan>
-								<tspan y="0">p </tspan>
-							</text>
-						</svg>
+						<picture>
+							<source srcset="img/logos/wu-logoa-s.png" media="(max-width:767px)">
+							<img src="img/logos/wu-logoa-lg.png" alt="Onboarding screen">
+						</picture>
 						<h1> A Language App Case Study</h1>
-						<p class="illustration-p">Word up focuses on a handful of practical features including a dictionary, worldwide pronunciation variations, collocations, and the ability to make flashcards. This app isn’t about bells and whistles: it’s about
+						<p class="paragraph-space">Word up focuses on a handful of practical features including a dictionary, worldwide pronunciation variations, collocations, and the ability to make flashcards. This app isn’t about bells and whistles: it’s about
 							simplicity, usability and functionalism.</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section>
 			<div class="container">
-				<div class="row">
-					<div class="column">
+				<div>
+					<div class="column wordup-img">
 						<picture>
-							<source srcset="img/wordup/wu-b-s.png" media="(max-width:767px)">
-							<img src="img/wordup/wu-b-lg.png" alt="Onboarding screen">
+							<source srcset="img/wordup/wu-3-s.png" media="(max-width:767px)">
+							<img src="img/wordup/wu-3-lg.png" alt="Onboarding screen">
 						</picture>
 					</div>
 				</div>
@@ -65,9 +63,9 @@
 		<section>
 			<div class="container">
 				<div class="row">
-					<div class="column screens-space">
+					<div class="column screens-space wordup-img2">
 						<h2> Challenges </h2>
-						<p class="illustration-p"> This app seeks to keep information organized while keeping things simple. It attempts to present the vast amount of interesting details and facts about words, yet also providing the simplest flashcard making
+						<p> This app seeks to keep information organized while keeping things simple. It attempts to present the vast amount of interesting details and facts about words, yet also providing the simplest flashcard making
 							process
 							possible. </p>
 						<picture>
@@ -87,8 +85,8 @@
 		<section>
 			<div class="container">
 				<div class="row">
-					<div class="column">
-						<video width="250" controls>
+					<div class="column video">
+						<video width="150" controls>
 							<source src="vid/flashcard.mp4" type="video/mp4">
 							<source src="vid/flashcard.mp4" type="video/ogg">
 							Your browser does not support HTML video.
@@ -100,7 +98,7 @@
 		<section>
 			<div class="container">
 				<div class="row">
-					<div class="column">
+					<div class="column wordup-img2">
 						<h2> Wireframing </h2>
 						<p> Several iterations of wireframing and prototyping were carried out to reach the best visual and user friendly solution possible. </p>
 						<picture>
@@ -114,20 +112,20 @@
 		<section>
 			<div class="container">
 				<div class="row">
-					<div class="column pics2 project2 screens-space">
+					<div class="column wordup-img">
 						<h2> User testing and Prototyping </h2>
-						<p class="illustration-p">Receiving constructive feedback from users during this phase provided invaluable suggestions, which helped to create effectively aesthetic and smooth design solutions. </p>
+						<p class="paragraph-space">Receiving constructive feedback from users during this phase provided invaluable suggestions, which helped to create effectively aesthetic and smooth design solutions. </p>
 						<picture>
-							<source srcset="img/wordup/utest-s.png" media="(max-width:767px)">
-							<img src="img/wordup/utest-lg.png" alt="User testing screens">
+							<source srcset="img/wordup/wu-1-s.png" media="(max-width:767px)">
+							<img src="img/wordup/wu-1-lg.png" alt="User testing screens">
 						</picture>
 						<p>Some users were confused by the first screen design, which attempted to evoke the feeling of a traditional typewriter, but led them to expect they could interact with it. This feedback inspired idea of “painting” with letters from
 							different languages, which users preferred in A/B testing.</p>
 					</div>
-					<div class="column pics2 screens-space">
+					<div class="column wordup-img">
 						<picture>
-							<source srcset="img/wordup/ut-2-s.png" media="(max-width:767px)">
-							<img src="img/wordup/ut-2-lg.png" alt="User testing screens">
+							<source srcset="img/wordup/wu-2b-s.png" media="(max-width:767px)">
+							<img src="img/wordup/wu-2b-lg.png" alt="User testing screens">
 						</picture>
 						<p> Initially some users reported feeling frustrated by the use of abstract letters as icons, which could impair smooth navigation. Further testing led to the creation of an alternate screen. Subsequent A/B testing provided no clear
 							preference and ultimately the original screen was chosen as it felt more on brand with the app. </p>
@@ -141,8 +139,8 @@
 					<div class="column">
 						<h2> All Screens </h2>
 						<picture>
-							<source srcset="img/wordup/allscreens-s.png" media="(max-width:767px)">
-							<img src="img/wordup/allscreens-lg.png" alt="Wireframes illustration">
+							<source srcset="img/wordup/wu-final-s.png" media="(max-width:767px)">
+							<img src="img/wordup/wu-final-lg.png" alt="Wireframes illustration">
 						</picture>
 					</div>
 				</div>
