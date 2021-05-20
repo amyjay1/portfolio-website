@@ -182,11 +182,6 @@ nav>ul {
   margin: 0;
 }
 
-/*nav>ul>li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0;
-}*/
 nav>ul>li>a {
   display: inline-block;
   padding: 0 15px;
@@ -309,7 +304,9 @@ body layout stuff
 .bodybears section:nth-of-type(even) {
   background-color: #FFF;
 }
-
+.wordup-logo img{
+  width:55%;
+}
 /* 25 px top and bottom, 0 left and right */
 .row::after {
   content: "";
