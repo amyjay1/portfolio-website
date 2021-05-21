@@ -42,6 +42,19 @@ body {
   color: #001622;
 }
 
+.homehero-div{
+  postion:relative;
+}
+.homehero-div2{
+  position:absolute;
+}
+
+.hero-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .svg-bears {
   text-align: left;
 }
@@ -94,7 +107,6 @@ a:focus {
 
 a:active {
   color: #FE5F55;
-  background-color: #FFF;
 }
 
 .button {
@@ -193,7 +205,7 @@ nav>ul>li>a {
   color: #FFF !important;
 }
 
-.navtoggle:hover li {
+.navtoggle li a:hover{
   opacity: 0.7;
   transition: 0.2s linear;
 }
@@ -862,16 +874,16 @@ annimation practice
   width: 200px;
   height: 150px;
   position: absolute;
-  top: 100px;
-  right: -50px;
+  top: 150px;
+  right: -20px;
   animation: float2 4s ease-in-out infinite alternate;
 }
 
 .cloud2 {
   width: 200px;
-  height: 150px;
+  height: 100px;
   position: absolute;
-  top: 0;
+  top: 300px;
   left: 0;
   animation: float1 4s ease-in-out infinite alternate;
 }
@@ -984,6 +996,15 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
+
+.navtoggle.responsive nav {
+  padding-top: 0;
+}
+
+.navtoggle.responsive li{
+  padding: 10px 15px 0;
+  border-top: none;
+}
 
   .logo span {
     display: inline;
