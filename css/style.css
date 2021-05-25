@@ -42,19 +42,28 @@ body {
   color: #001622;
 }
 
-.homehero-div{
-  postion:relative;
+.homehero-div picture{
+  display:block;
+  line-height: 0;
 }
-.homehero-div2{
+.homehero-div{
   position:absolute;
+  bottom:0;
 }
 
 .hero-centered {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  z-index: 999999;
+  /*left: 50%;
+  transform: translate(-50%, -50%);*/
 }
+.scroll{
+position: absolute;
+bottom: 30px;
+width: 100%;
+}
+
 .svg-bears {
   text-align: left;
 }
@@ -86,7 +95,9 @@ h4, .h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* ==============================
 buttons and hyperlinks
 ================================= */
@@ -158,7 +169,7 @@ img {
 }
 
 .wordup-img img {
-  width: 90%;
+  width: 75%;
   margin: auto;
   display: block;
 }
@@ -172,6 +183,7 @@ header {
   position: fixed;
   width: 100%;
   padding: 10px 0 4px;
+  z-index: 999;
 }
 
 .logo {
@@ -250,11 +262,6 @@ nav>ul>li>a {
   width: 300px;
 }
 
-/*.hero-ill img {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}*/
 .wrapper {
   height: 300px;
   width: 300px;
@@ -372,10 +379,12 @@ main {
 }
 
 .hero {
+  position: relative;
   text-align: center;
   background-color: #FFD97E;
   color: #001622E6;
-  padding: 6em 0;
+  padding: 0;
+  min-height: 450px;
 }
 
 #hero {
@@ -510,33 +519,13 @@ chefdj
 .wordup-row {
   padding: 5px;
 }
-
 /* ==============================
-annimations
+annimations for bearable savings and ChefDj logos
 ================================= */
-.music {
-  animation-duration: 30s;
-  animation-name: music-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
 
 .shake-slow {
   display: inline-block;
   transform-origin: center center;
-}
-
-.shake-freeze,
-.shake-constant.shake-constant--hover:hover,
-.shake-trigger:hover .shake-constant.shake-constant--hover {
-  animation-play-state: paused;
-}
-
-.shake-freeze:hover,
-.shake-trigger:hover .shake-freeze, .shake-slow:hover,
-.shake-trigger:hover .shake-slow {
-  animation-play-state: running;
 }
 
 @keyframes shake-slow {
@@ -748,37 +737,9 @@ annimations
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-
 /* ==============================
-Annimation for herosection on index
+annimations for index page
 ================================= */
-.scene {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.cloud1 {
-  width: 200px;
-  height: 150px;
-  position: absolute;
-  top: 100px;
-  right: -50px;
-  animation: float2 4s ease-in-out infinite alternate;
-}
-
-.cloud2 {
-  width: 200px;
-  height: 150px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: float1 4s ease-in-out infinite alternate;
-}
-
 .flier {
   pointer-events: none;
 }
@@ -849,62 +810,41 @@ Annimation for herosection on index
   }
 }
 
-/* ==============================
-annimation practice
-================================= */
-.scene {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.upper {
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-}
-
 .cloud1 {
-  width: 200px;
+  width: 550px;
   height: 150px;
   position: absolute;
   top: 150px;
   right: -20px;
-  animation: float2 4s ease-in-out infinite alternate;
+  animation: float2 5s ease-in-out forwards;
 }
 
 .cloud2 {
-  width: 200px;
+  width: 500px;
   height: 100px;
   position: absolute;
   top: 300px;
-  left: 0;
-  animation: float1 4s ease-in-out infinite alternate;
+  left: 25px;
+  animation: float1 5s ease-in-out forwards;
 }
 
 @keyframes float1 {
   from {
-    transform: translateX(-50px);
+    transform: translateX(-25px);
   }
 
   to {
-    transform: translateX(50px);
+    transform: translateX(150px);
   }
 }
 
 @keyframes float2 {
   from {
-    transform: translateX(50px);
+    transform: translateX(150px);
   }
 
   to {
-    transform: translateX(-50px);
+    transform: translateX(-85px);
   }
 }
 
@@ -917,10 +857,23 @@ Medium devices (640px and larger)
     padding: 20px 0;
   }
 
-  .col-md-1 {
-    width: 8.33%;
+  .hero{
+    min-height: 650px;
+        max-width: 100%;
   }
-
+  .hero-centered {
+    top: 25%;
+    width: 100%;
+  }
+  .cloud1 {
+      width: 550px;
+      top: 90px;
+      right: -20px;
+  }
+  .cloud2 {
+    top: 300px;
+    left: -100px;
+  }
   .col-md-2 {
     width: 16.66%;
   }
@@ -1116,6 +1069,16 @@ Large devices (1024px or larger)
     padding: 20px 0 13px;
   }
 
+  .hero-centered {
+    top: 20%;
+  }
+
+  .cloud2 {
+    left: -100px;
+  }
+  .space-word picture{
+    bottom:30px;
+  }
   .col-lg-1 {
     width: 8.33%;
   }
