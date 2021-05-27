@@ -12,7 +12,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  background-color: #Fff;
+  background-color: #FFF;
   color: #001622E6;
 }
 
@@ -180,7 +180,7 @@ header {
 }
 
 a.logo {
-  color: #001622 !important;
+  color: #FFF !important;
 }
 
 .logo span {
@@ -201,7 +201,7 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1em;
-  color: #001622 !important;
+  color: #FFF !important;
 }
 
 .navtoggle li a:hover {
@@ -257,7 +257,7 @@ nav>ul>li>a {
 }
 
 footer {
-  color: #001622;
+  color: #FFF;
   text-align: center;
   padding: 20px 0;
   background-color: #FE5F55;
@@ -768,7 +768,7 @@ annimations for index page
     transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
   }
 
-  20% {
+  15% {
     transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
   }
 
@@ -784,16 +784,16 @@ annimations for index page
     transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
   }
 
-  45% {
-    transform: translateX(-350%) translateY(-300%) rotateZ(0deg)
+  65% {
+    transform: translateX(100vw%) translateY(50vh) rotateZ(0deg)
   }
 
-  65.001%, 15% {
-    transform: translateX(100vh) translateY(-100%) rotateZ(180deg)
+  65.001%, 68% {
+    transform: translateX(20vh) translateY(-200%) rotateZ(180deg)
   }
 
   95% {
-    transform: translateX(100%) translateY(-100%) rotateZ(0deg)
+    transform: translateX(100%) translateY(100vh) rotateZ(0deg)
   }
 }
 
