@@ -1,7 +1,8 @@
 /*colors used/:
-Orangy Pink): #fa4144;#FE5F55
-(Black):#001622;
-soft yellow: #FFF3E0 */
+(Orangy Pink-Nav):#FE5F55
+(Black-text):#001622E6;
+(soft yellow-chefdj): #FFF3E0
+(purple-wordup) */
 * {
   box-sizing: border-box;
 }
@@ -9,46 +10,28 @@ soft yellow: #FFF3E0 */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  /* sets the font size to 16px */
   font-weight: 300;
-  /* sets the font weight to 300 */
   line-height: 1.6;
-  /* sets the line-height to 1.6 * the font-size */
   background-color: #Fff;
   color: #001622E6;
 }
 
 .bodywordup {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  /* sets the font size to 16px */
-  font-weight: 300;
-  /* sets the font weight to 300 */
-  line-height: 1.6;
-  /* sets the line-height to 1.6 * the font-size */
   background-color: #3A389633;
-  color: #001622;
 }
 
 .bodybears {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  /* sets the font size to 16px */
-  font-weight: 300;
-  /* sets the font weight to 300 */
-  line-height: 1.6;
-  /* sets the line-height to 1.6 * the font-size */
   background-color: #B9D6AD66;
-  color: #001622;
 }
 
-.homehero-div picture{
-  display:block;
+.homehero-div picture {
+  display: block;
   line-height: 0;
 }
-.homehero-div{
-  position:absolute;
-  bottom:0;
+
+.homehero-div {
+  position: absolute;
+  bottom: 0;
 }
 
 .hero-centered {
@@ -58,10 +41,11 @@ body {
   /*left: 50%;
   transform: translate(-50%, -50%);*/
 }
-.scroll{
-position: absolute;
-bottom: 30px;
-width: 100%;
+
+.scroll {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
 }
 
 .svg-bears {
@@ -95,9 +79,11 @@ h4, .h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 /* ==============================
 buttons and hyperlinks
 ================================= */
@@ -164,7 +150,8 @@ img {
 }
 
 .chefdj-img2 img {
-  width: 85% margin: auto;
+  width: 85%;
+  margin: auto;
   display: block;
 }
 
@@ -193,7 +180,7 @@ header {
 }
 
 a.logo {
-  color: #FFF !important;
+  color: #001622!important;
 }
 
 .logo span {
@@ -214,10 +201,10 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1em;
-  color: #FFF !important;
+  color: #001622 !important;
 }
 
-.navtoggle li a:hover{
+.navtoggle li a:hover {
   opacity: 0.7;
   transition: 0.2s linear;
 }
@@ -270,7 +257,7 @@ nav>ul>li>a {
 }
 
 footer {
-  color: #fff;
+  color: #001622;
   text-align: center;
   padding: 20px 0;
   background-color: #FE5F55;
@@ -323,9 +310,11 @@ body layout stuff
 .bodybears section:nth-of-type(even) {
   background-color: #FFF;
 }
-.wordup-logo img{
-  width:55%;
+
+.wordup-logo img {
+  width: 55%;
 }
+
 /* 25 px top and bottom, 0 left and right */
 .row::after {
   content: "";
@@ -495,10 +484,6 @@ chefdj
   padding-bottom: 10px;
 }
 
-.pg-morespace {
-  margin-bottom: 50px
-}
-
 .flex-container-bears {
   display: flex;
   flex-direction: column;
@@ -519,10 +504,10 @@ chefdj
 .wordup-row {
   padding: 5px;
 }
+
 /* ==============================
 annimations for bearable savings and ChefDj logos
 ================================= */
-
 .shake-slow {
   display: inline-block;
   transform-origin: center center;
@@ -737,16 +722,12 @@ annimations for bearable savings and ChefDj logos
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+
 /* ==============================
 annimations for index page
 ================================= */
 .flier {
-  pointer-events: none;
-}
-
-.flier {
   animation: fly 50s linear infinite;
-  pointer-events: none !important;
   top: 0;
   left: 0;
   transform: translateX(-120%) translateY(-120%) rotateZ(0);
@@ -857,23 +838,27 @@ Medium devices (640px and larger)
     padding: 20px 0;
   }
 
-  .hero{
+  .hero {
     min-height: 650px;
-        max-width: 100%;
+    max-width: 100%;
   }
+
   .hero-centered {
     top: 25%;
     width: 100%;
   }
+
   .cloud1 {
-      width: 550px;
-      top: 90px;
-      right: -20px;
+    width: 550px;
+    top: 90px;
+    right: -20px;
   }
+
   .cloud2 {
     top: 300px;
     left: -100px;
   }
+
   .col-md-2 {
     width: 16.66%;
   }
@@ -950,14 +935,14 @@ Medium devices (640px and larger)
     display: none;
   }
 
-.navtoggle.responsive nav {
-  padding-top: 0;
-}
+  .navtoggle.responsive nav {
+    padding-top: 0;
+  }
 
-.navtoggle.responsive li{
-  padding: 10px 15px 0;
-  border-top: none;
-}
+  .navtoggle.responsive li {
+    padding: 10px 15px 0;
+    border-top: none;
+  }
 
   .logo span {
     display: inline;
@@ -1076,9 +1061,11 @@ Large devices (1024px or larger)
   .cloud2 {
     left: -100px;
   }
-  .space-word picture{
-    bottom:30px;
+
+  .space-word picture {
+    bottom: 30px;
   }
+
   .col-lg-1 {
     width: 8.33%;
   }
