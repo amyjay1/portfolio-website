@@ -762,7 +762,7 @@ annimations for index page
     transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
   }
 
-  15% {
+  20% {
     transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
   }
 
