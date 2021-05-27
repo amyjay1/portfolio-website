@@ -170,7 +170,7 @@ header {
   position: fixed;
   width: 100%;
   padding: 10px 0 4px;
-  z-index: 999;
+  z-index: 9999999;
 }
 
 .logo {
@@ -180,7 +180,7 @@ header {
 }
 
 a.logo {
-  color: #001622!important;
+  color: #001622 !important;
 }
 
 .logo span {
@@ -274,10 +274,15 @@ footer {
 }
 
 .social .fab {
-  color: #fff;
+  color: #FFF;
   font-size: 2em;
   list-style-type: none;
   margin: 0 10px;
+  transition: 0.2s opacity;
+}
+
+.social .fab:hover {
+  opacity: 0.8;
 }
 
 .copyright {
@@ -374,6 +379,7 @@ main {
   color: #001622E6;
   padding: 0;
   min-height: 450px;
+  overflow: hidden;
 }
 
 #hero {
@@ -731,7 +737,7 @@ annimations for index page
   top: 0;
   left: 0;
   transform: translateX(-120%) translateY(-120%) rotateZ(0);
-  position: fixed;
+  position: absolute;
   animation-delay: 1s;
   z-index: 999999;
 }
@@ -778,16 +784,16 @@ annimations for index page
     transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
   }
 
-  65% {
-    transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+  45% {
+    transform: translateX(-350%) translateY(-300%) rotateZ(0deg)
   }
 
-  65.001%, 68% {
-    transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+  65.001%, 15% {
+    transform: translateX(100vh) translateY(-100%) rotateZ(180deg)
   }
 
   95% {
-    transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+    transform: translateX(100%) translateY(-100%) rotateZ(0deg)
   }
 }
 
@@ -949,7 +955,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 44px;
+    padding-top: 89px;
   }
 
   .col-md-6 {
@@ -1051,7 +1057,6 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
   }
 
   .hero-centered {
@@ -1167,6 +1172,10 @@ h2 {
     padding: 20px 0 13px;
   }
 
+  main {
+    padding-top: 82px;
+  }
+
   .col-xl-4 {
     width: 50%;
   }
@@ -1175,7 +1184,7 @@ h2 {
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width 1920px) {
+@media only screen and (min-width: 1920px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
