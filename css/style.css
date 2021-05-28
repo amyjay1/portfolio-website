@@ -1210,4 +1210,8 @@ Extra-large devices (1920px or larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+  .hero-centered {
+    top: 5%;
+    width: 100%;
+  }
 }
