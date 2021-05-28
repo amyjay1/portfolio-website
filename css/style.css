@@ -1178,6 +1178,27 @@ h2 {
 
   .col-xl-4 {
     width: 50%;
+
+  }
+  .hero {
+    min-height: 650px;
+    max-width: 100%;
+  }
+
+  .hero-centered {
+    top: 15%;
+    width: 100%;
+  }
+
+  .cloud1 {
+    width: 650px;
+    top: 55px;
+    right: -20px;
+  }
+
+  .cloud2 {
+    top: 300px;
+    left: -150px;
   }
 }
 
